@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        #area {
+            height: 500px;
+            width: 500px;
+            margin: 20px auto;
+            
+        }
+
+        #color {
+            width: 20vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <input type="text" name="color" placeholder="search a color to see it in the browser" onkeyup="myfunction()" id="color" />
+        <button onclick="nadim()">clean everythings</button>
+        <div id="area">
+
+        </div>
+    </div>
+    <script>
+      
+        function myfunction(){
+            let color = document.getElementById('color');
+        let area = document.getElementById('area');
+            area.style.backgroundColor=color.value;
+            area.innerText =`<h1> ${color.value} </h1>`;
+            area.style.color="black";
+            if(area.style.color===color.value){
+                area.style.color='white'
+            }
+        }
+        const nadim =()=>{
+            area.innerText='';
+            color.value='';
+            area.style.backgroundColor='';
+        }
+     
+    </script>
+</body>
+
+</html>

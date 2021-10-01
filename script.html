@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>playing with array</title>
+</head>
+<body>
+    
+
+    <script>
+        // //(1) getting union of two Array with assending and descending 
+        // let arr1 = [1,4,3,2,1,5,3];
+        // let arr2 = [2,6,4,8,7]
+        // let arrUnion = [...arr1 , ...arr2];
+        // // ascending order 
+        // let sort = arrUnion.sort()
+        // let subsduplicate = new Set(sort)
+        // console.log(subsduplicate)
+
+        // // descending order 
+        // let rev = sort.reverse()
+        // let subsduplicate2 = new Set(rev)
+        // console.log(subsduplicate2)
+       
+        // (2) getting the common value present in two Array
+
+        // let arr3 = [7,9,5,8,3]
+        // let arr4 = [1,2,4,6,8,8,3,7,3]
+
+        // let common =
+        //     arr4.filter((value)=>{
+        //         return arr3.includes(value)
+        //     }).sort()
+            
+        
+        // console.log(new Set(common))
+
+
+        // (3) function currying in regular function 
+            // function one (a){
+            //     return function(b){
+            //         return function(c){
+            //             return function(d){
+            //                 console.log(a + b + c + d)
+            //             }
+            //         }
+            //     }
+            // }
+            // one(1)(2)(3)(4)
+             
+            // (4) function currying in array function in multiple lines
+            //  const two = (a) =>{
+            //      return (b) =>{
+            //         return (c) =>{
+            //             return (d) =>{
+            //                 console.log(a+b+c+d)
+            //             }
+            //         }
+            //      }
+            //  } 
+            //  two(5)(6)(7)(8)
+
+            // (5) making function currying in one line using Array function
+            // const three = (a) => (b) => (c) => (d) => console.log(a+b+c+d) 
+            // three(3)(5)(7)(9)
+    </script>
+    
+</body>
+</html>
